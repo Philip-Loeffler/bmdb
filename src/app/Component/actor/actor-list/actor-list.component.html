@@ -1,0 +1,22 @@
+<section class="heading">
+  <span class="page-title font-weight-bold font-italic">[{{title}}]</span>
+</section>
+<table class="table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>gender</th>
+      <th>birthdate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let actor of actors">
+      <td>{{actor.id}}</td>
+      <td>{{actor.firstName}} {{actor.lastName}}</td>
+      <td>{{actor.gender}}</td>
+      <td>{{actor.birthDate}}</td>
+      <td>detail | edit</td>
+    </tr>
+  </tbody>
+</table>
