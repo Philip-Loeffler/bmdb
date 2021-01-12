@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Movie } from "src/app/Model/movie";
 import { MovieService } from "src/app/Service/movie.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-movie-create",
@@ -11,7 +12,7 @@ export class MovieCreateComponent implements OnInit {
   public title: string = "Movie create";
   public movie: Movie = new Movie();
   submitBtnTitle: string = "create";
-  constructor(private movieSvc: MovieService) {}
+  constructor(private movieSvc: MovieService, private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -20,6 +21,7 @@ export class MovieCreateComponent implements OnInit {
       (resp) => {
         this.movie = resp as Movie;
         console.log("movies", this.movie);
+        this.router.navigateByUrl("/movie-list");
       },
       (err) => {
         console.log(err);
