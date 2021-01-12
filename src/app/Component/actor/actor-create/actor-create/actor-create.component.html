@@ -1,0 +1,50 @@
+<section class="heading">
+  <span class="component-title">[{{title}}]</span>
+</section>
+<main class="single">
+  <table class="table table-sm">
+    <tr>
+      <td>
+        firstname
+      </td>
+      <td>
+        <input [(ngModel)]="actor.firstname" class="rounded" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        lastname
+      </td>
+      <td>
+        <input [(ngModel)]="actor.lastname" class="rounded" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        gender
+      </td>
+      <td>
+        <input [(ngModel)]="actor.gender" class="rounded" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        birthdate
+      </td>
+      <td>
+        <input [(ngModel)]="actor.birthdate" class="rounded" type="date" />
+      </td>
+    </tr>
+  </table>
+</main>
+<<span
+  ><button (click)="save()" class="btn btn-sm btn-primary">
+    {{submitBtnTitle}}
+  </button></span
+>
+
+<!-- <span
+    ><button (click)="backClicked()" class="btn btn-sm btn-primary">
+      Back
+    </button></span 
+  > -->
