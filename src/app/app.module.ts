@@ -9,9 +9,10 @@ import { ActorListComponent } from "./Component/actor/actor-list/actor-list.comp
 import { HomeComponent } from './Component/home/home.component';
 import { MovieCreateComponent } from './Component/movie/movie-create/movie-create/movie-create.component';
 import { ActorCreateComponent } from './Component/actor/actor-create/actor-create/actor-create.component';
+import { NoComponentDefinedComponent } from './Component/no-component-defined/no-component-defined.component';
 
 @NgModule({
-  declarations: [AppComponent, MovieListComponent, ActorListComponent, HomeComponent, MovieCreateComponent, ActorCreateComponent],
+  declarations: [AppComponent, MovieListComponent, ActorListComponent, HomeComponent, MovieCreateComponent, ActorCreateComponent, NoComponentDefinedComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
