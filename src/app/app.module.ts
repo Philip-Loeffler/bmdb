@@ -11,9 +11,11 @@ import { MovieCreateComponent } from './Component/movie/movie-create/movie-creat
 import { ActorCreateComponent } from './Component/actor/actor-create/actor-create/actor-create.component';
 import { NoComponentDefinedComponent } from './Component/no-component-defined/no-component-defined.component';
 import { MenuComponent } from './Component/menu/menu.component';
+import { MovieDetailComponent } from './Component/movie/movie-detail/movie-detail.component';
+import { MovieEditComponent } from './Component/movie/movie-edit/movie-edit.component';
 
 @NgModule({
-  declarations: [AppComponent, MovieListComponent, ActorListComponent, HomeComponent, MovieCreateComponent, ActorCreateComponent, NoComponentDefinedComponent, MenuComponent],
+  declarations: [AppComponent, MovieListComponent, ActorListComponent, HomeComponent, MovieCreateComponent, ActorCreateComponent, NoComponentDefinedComponent, MenuComponent, MovieDetailComponent, MovieEditComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -9,7 +9,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./actor-create.component.css"],
 })
 export class ActorCreateComponent implements OnInit {
-  public title: string = "Movie create";
+  public title: string = "Actor create";
   public actor: Actor = new Actor();
   submitBtnTitle: string = "create";
   constructor(private actorSvc: ActorService, private router: Router) {}
