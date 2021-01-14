@@ -4,7 +4,6 @@ export class Movie {
   year: number;
   rating: string;
   director: string;
-
   constructor(
     id: number = 0,
     title: string = "",

@@ -18,4 +18,8 @@ export class MovieService {
   create(movie: Movie): Observable<Movie> {
     return this.http.post(URL + "/", movie) as Observable<Movie>;
   }
+
+  getById(id: number): Observable<Movie> {
+    return this.http.get(URL + "/" + id) as Observable<Movie>;
+  }
 }

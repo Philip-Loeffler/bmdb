@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "movie-list", component: MovieListComponent },
   { path: "movie-create", component: MovieCreateComponent },
-  { path: "movie-detail", component: MovieDetailComponent },
+  { path: "movie-detail/:id", component: MovieDetailComponent },
   { path: "movie-edit", component: MovieEditComponent },
   { path: "actor-list", component: ActorListComponent },
   { path: "actor-create", component: ActorCreateComponent },
