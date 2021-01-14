@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "movie-list", component: MovieListComponent },
   { path: "movie-create", component: MovieCreateComponent },
   { path: "movie-detail/:id", component: MovieDetailComponent },
-  { path: "movie-edit", component: MovieEditComponent },
+  { path: "movie-edit/:id", component: MovieEditComponent },
   { path: "actor-list", component: ActorListComponent },
   { path: "actor-create", component: ActorCreateComponent },
   { path: "home", component: HomeComponent },

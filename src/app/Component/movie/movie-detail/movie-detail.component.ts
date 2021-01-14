@@ -24,6 +24,18 @@ export class MovieDetailComponent implements OnInit {
     this.movieSvc.getById(this.movieId).subscribe(
       (resp) => {
         this.movie = resp as Movie;
+        console.log(this.movie.id);
+        console.log("movies", this.movie);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+  }
+  delete() {
+    this.movieSvc.delete(this.movie.id).subscribe(
+      (resp) => {
+        this.movie = resp as Movie;
         console.log("movies", this.movie);
         this.router.navigateByUrl("/movie-list");
       },
