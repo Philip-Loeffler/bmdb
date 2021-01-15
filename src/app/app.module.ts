@@ -13,6 +13,9 @@ import { NoComponentDefinedComponent } from "./Component/no-component-defined/no
 import { MenuComponent } from "./Component/menu/menu.component";
 import { MovieDetailComponent } from "./Component/movie/movie-detail/movie-detail.component";
 import { MovieEditComponent } from "./Component/movie/movie-edit/movie-edit.component";
+import { ActorDetailComponent } from './Component/actor/actor-detail/actor-detail.component';
+import { ActorDeleteComponent } from './Component/actor/actor-delete/actor-delete.component';
+import { ActorEditComponent } from './Component/actor/actor-edit/actor-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { MovieEditComponent } from "./Component/movie/movie-edit/movie-edit.comp
     MenuComponent,
     MovieDetailComponent,
     MovieEditComponent,
+    ActorDetailComponent,
+    ActorDeleteComponent,
+    ActorEditComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
