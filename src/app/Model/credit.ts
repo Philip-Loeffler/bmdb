@@ -1,13 +1,16 @@
+import { Actor } from './actor';
+import { Movie } from './movie';
+
 export class Credit {
   id: number;
-  actor: string;
-  movie: string;
+  actor: Actor;
+  movie: Movie;
   role: string;
 
   constructor(
     id: number = 0,
-    actor: string = '',
-    movie: string = '',
+    actor: Actor = new Actor(),
+    movie: Movie = new Movie(),
     role: string = ''
   ) {
     this.id = id;
