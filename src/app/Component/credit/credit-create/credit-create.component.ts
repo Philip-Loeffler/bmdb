@@ -13,7 +13,7 @@ import { MovieService } from 'src/app/Service/movie.service';
   styleUrls: ['./credit-create.component.css'],
 })
 export class CreditCreateComponent implements OnInit {
-  public title: string = 'credit create';
+  public title: string = 'credit edit';
   public credit: Credit = new Credit();
   submitBtnTitle: string = 'create';
   actors: Actor[] = [];
