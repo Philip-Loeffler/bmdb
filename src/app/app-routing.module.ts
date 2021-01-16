@@ -5,6 +5,7 @@ import { MovieCreateComponent } from './Component/movie/movie-create/movie-creat
 import { MovieDetailComponent } from './Component/movie/movie-detail/movie-detail.component';
 import { MovieEditComponent } from './Component/movie/movie-edit/movie-edit.component';
 import { ActorListComponent } from './Component/actor/actor-list/actor-list.component';
+import { CreditListComponent } from './Component/credit/credit-list/credit-list.component';
 import { ActorCreateComponent } from './Component/actor/actor-create/actor-create.component';
 import { ActorDetailComponent } from './Component/actor/actor-detail/actor-detail.component';
 import { ActorEditComponent } from './Component/actor/actor-edit/actor-edit.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'actor-create', component: ActorCreateComponent },
   { path: 'actor-detail/:id', component: ActorDetailComponent },
   { path: 'actor-edit/:id', component: ActorEditComponent },
+  { path: 'credit-list', component: CreditListComponent },
   { path: 'home', component: HomeComponent },
   { path: '**', component: NoComponentDefinedComponent },
 ];

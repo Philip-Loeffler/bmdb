@@ -2,7 +2,7 @@
 <div class="component">
   <section class="heading">
     <span class="page-title font-weight-bold font-italic">{{ title }}</span>
-    <span>&nbsp;<a routerLink="/movie-list">Return to List</a></span>
+    <span>&nbsp;<a routerLink="/actor-list">Return to List</a></span>
   </section>
   <main class="single">
     <table class="table table-sm">
@@ -47,7 +47,7 @@
         <td>Birthday:</td>
         <td>
           <input
-            [(ngModel)]="actor.birthDate"
+            [(ngModel)]="actor.birthdate"
             class="rounded"
             type="text"
             disabled
