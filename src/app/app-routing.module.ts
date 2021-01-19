@@ -15,6 +15,7 @@ import { ActorDetailComponent } from './Component/actor/actor-detail/actor-detai
 import { ActorEditComponent } from './Component/actor/actor-edit/actor-edit.component';
 import { NoComponentDefinedComponent } from './Component/no-component-defined/no-component-defined.component';
 import { HomeComponent } from './Component/home/home.component';
+import { UserLoginComponent } from './Component/user/user-login/user-login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'credit-list', component: CreditListComponent },
   { path: 'credit-create', component: CreditCreateComponent },
   { path: 'credit-detail/:id', component: CreditDetailComponent },
+  { path: 'user-login', component: UserLoginComponent },
   { path: 'credit-edit/:id', component: CreditEditComponent },
   { path: 'home', component: HomeComponent },
   { path: '**', component: NoComponentDefinedComponent },
