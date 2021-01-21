@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/Model/user';
 import { UserService } from 'src/app/Service/user.service';
 import { Router } from '@angular/router';
+import { SystemService } from 'src/app/Service/system.service';
 
 @Component({
   selector: 'app-user-login',
@@ -12,7 +13,11 @@ export class UserLoginComponent implements OnInit {
   title: string = 'login';
   msg: string = '';
   user: User = new User();
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(
+    private userService: UserService,
+    private router: Router,
+    private sysSvc: SystemService
+  ) {}
 
   ngOnInit(): void {}
 
@@ -22,6 +27,7 @@ export class UserLoginComponent implements OnInit {
         if (resp == null) {
           this.msg = 'invalid username';
         } else {
+          this.sysSvc.loggedInUser = this.user;
           this.user = resp as User;
           this.router.navigateByUrl('/movie-list');
         }
