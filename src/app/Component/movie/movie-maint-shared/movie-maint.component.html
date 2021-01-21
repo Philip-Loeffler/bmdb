@@ -1,37 +1,29 @@
 <app-menu></app-menu>
 <section class="heading">
-  <span class="component-title">[{{title}}]</span>
+  <span class="component-title">[{{ title }}]</span>
 </section>
-<main *ngIf="movie" class="single">
+<main class="single">
   <table class="table table-sm">
     <tr>
-      <td>
-        Title:
-      </td>
+      <td>Title:</td>
       <td>
         <input [(ngModel)]="movie.title" class="rounded" type="text" />
       </td>
     </tr>
     <tr>
-      <td>
-        year
-      </td>
+      <td>year</td>
       <td>
         <input [(ngModel)]="movie.year" class="rounded" type="text" />
       </td>
     </tr>
     <tr>
-      <td>
-        rating
-      </td>
+      <td>rating</td>
       <td>
         <input [(ngModel)]="movie.rating" class="rounded" type="text" />
       </td>
     </tr>
     <tr>
-      <td>
-        director
-      </td>
+      <td>director</td>
       <td>
         <input [(ngModel)]="movie.director" class="rounded" type="text" />
       </td>
@@ -40,7 +32,7 @@
 </main>
 <<span
   ><button (click)="save()" class="btn btn-sm btn-primary">
-    {{submitBtnTitle}}
+    {{ submitBtnTitle }}
   </button></span
 >
 

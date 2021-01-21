@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Movie } from 'src/app/Model/movie';
 import { MovieService } from 'src/app/Service/movie.service';
 import { SystemService } from 'src/app/Service/system.service';
+import { User } from 'src/app/Model/user';
 
 @Component({
   selector: 'app-movie-list',
@@ -11,6 +12,7 @@ import { SystemService } from 'src/app/Service/system.service';
 export class MovieListComponent implements OnInit {
   public title: string = 'Movie List';
   public movies: Movie[] = [];
+  user: User = new User();
 
   constructor(private movieSvc: MovieService, private sysSvc: SystemService) {}
 
@@ -19,6 +21,7 @@ export class MovieListComponent implements OnInit {
     this.movieSvc.getAll().subscribe(
       (resp) => {
         this.movies = resp as Movie[];
+        this.sysSvc.loggedInUser = this.user;
         console.log('movies', this.movies);
       },
       (err) => {
