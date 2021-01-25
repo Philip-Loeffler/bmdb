@@ -13,6 +13,9 @@ export class MovieListComponent implements OnInit {
   public title: string = 'Movie List';
   public movies: Movie[] = [];
   user: User = new User();
+  sortCriteria: string = 'id';
+  sortOrder: string = 'asc';
+  colClasses = 'btn btn-link font-weight-bold';
 
   constructor(private movieSvc: MovieService, private sysSvc: SystemService) {}
 
@@ -29,5 +32,13 @@ export class MovieListComponent implements OnInit {
       }
     );
     //populate list of movies
+  }
+
+  sortBy(column: string): void {
+    console.log('movie list sortBy called');
+    if (column == this.sortCriteria) {
+      this.sortOrder = this.sortOrder == 'desc' ? 'asc' : 'desc';
+    }
+    this.sortCriteria = column;
   }
 }

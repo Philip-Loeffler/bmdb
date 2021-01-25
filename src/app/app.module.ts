@@ -24,6 +24,7 @@ import { UserDetailComponent } from './Component/user/user-detail/user-detail.co
 import { UserEditComponent } from './Component/user/user-edit/user-edit.component';
 import { UserCreateComponent } from './Component/user/user-create/user-create.component';
 import { UserLoginComponent } from './Component/user/user-login/user-login.component';
+import { PortPipe } from './pipe/port.pipe';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { UserLoginComponent } from './Component/user/user-login/user-login.compo
     UserEditComponent,
     UserCreateComponent,
     UserLoginComponent,
+    PortPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
